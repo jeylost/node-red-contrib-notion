@@ -1,0 +1,25 @@
+<script type="text/javascript">
+  RED.nodes.registerType("notion-client", {
+      category: 'notion',
+      credentials: {
+        api_key: { type: "text" }
+      },
+      inputs: 0,
+      outputs: 0,
+      color: "#FFFFFF",
+      icon: 'notion.png',
+      label: 'notion-client'
+  });
+</script>
+
+<script type="text/html" data-template-name="notion-client">
+  <div class="form-row">
+    <label for="node-input-api_key"><i class="fa fa-tag"></i> Notion API Key</label>
+    <input type="text" id="node-input-api_key">
+   </div>
+  <div class="form-tips"><b>Tip:</b> If you don't have a Notion API Key. Check out Notion guide https://developers.notion.com/docs/getting-started</div>
+</script>
+
+<script type="text/html" data-help-name="notion-client">
+  <p>Creates Notion client that can be used by other notion nodes to perform action against Notion API.</p>
+</script>
