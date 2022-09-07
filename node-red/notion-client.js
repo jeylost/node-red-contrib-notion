@@ -6,9 +6,9 @@ module.exports = function(RED) {
 
     const NOTION_API_KEY = this.credentials.api_key;
 
-    if (!NOTION_API_KEY) {
-      throw new Error("Notion API key isn't provided. If you don't have one. Check out Notion guide https://developers.notion.com/docs/getting-started");
-    }
+    // if (!NOTION_API_KEY) {
+    //   throw new Error("Notion API key isn't provided. If you don't have one. Check out Notion guide https://developers.notion.com/docs/getting-started");
+    // }
 
     const flowContext = this.context();
 
