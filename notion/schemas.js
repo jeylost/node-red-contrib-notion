@@ -12,7 +12,7 @@ const NotionPageSchema = Joi.object({
   cover: Joi.object({
     type: Joi.string().valid('external').required(),
     external: Joi.object({
-      url: Joi.string().url().required(),
+      url: Joi.string().uri().required(),
     }),
   }),
   
