@@ -9,10 +9,12 @@
     "type": "commonjs",
     "node-red": {
         "nodes": {
-            "notion-client": "./node-red/notion-client.js"
+            "notion-client": "./node-red/notion-client.js",
+            "notion-add-page": "./node-red/notion-add-page.js"
         }
     },
     "dependencies": {
-        "@notionhq/client": "^2.2.0"
+        "@notionhq/client": "^2.2.0",
+        "joi": "^17.6.0"
     }
 }
