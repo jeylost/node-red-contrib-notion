@@ -11,6 +11,7 @@ module.exports = function(RED) {
       const { error, result } = notion.addPageToDatabase(msg.payload);
 
       if (error) {
+        this.log(error);
         throw error;
       }
 
