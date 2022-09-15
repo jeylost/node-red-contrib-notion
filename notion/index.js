@@ -13,7 +13,7 @@ module.exports = class Notion {
         return { error: { type: 'validation_error', message: validationResult.error }, result: null };
     }
 
-    return notion.pages.create(payload).catch(error => {
+    return this.client.pages.create(payload).catch(error => {
         return { error: { type: 'notion_api_error', message: error.code }, result: null };
     });
   }
