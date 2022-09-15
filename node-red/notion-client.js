@@ -10,7 +10,7 @@ module.exports = function(RED) {
       throw new Error("Notion API key isn't provided. If you don't have one. Check out Notion guide https://developers.notion.com/docs/getting-started");
     }
 
-    const flowContext = this.context();
+    const flowContext = this.context().flow;
 
     const notion = new Notion(NOTION_API_KEY);
 

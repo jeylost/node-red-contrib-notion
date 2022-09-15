@@ -2,7 +2,7 @@ module.exports = function(RED) {
   function NotionAddPage(config) {
     RED.nodes.createNode(this, config);
 
-    const flowContext = this.context();
+    const flowContext = this.context().flow;
 
     const notion = flowContext.get("notion");
     
